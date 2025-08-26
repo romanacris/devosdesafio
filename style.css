@@ -1,0 +1,143 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.bg-dark {
+  background-color: #2B2B2B;
+}
+
+.card-dark {
+  background-color: #3C3C3C;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.btn-dark {
+  background-color: #D9534F;
+  color: #FFF;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.text-secondary-dark {
+  color: #E06666;
+}
+
+.text-dark-primary {
+  color: #FFF;
+}
+
+.bg-light {
+  background-color: #FFF;
+}
+
+.card-light {
+  background-color: #F2F2F2;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-light {
+  background-color: #D9534F;
+  color: #FFF;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-light:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.text-secondary-light {
+  color: #E06666;
+}
+
+.text-light-primary {
+  color: #2B2B2B;
+}
+
+.fade-slide {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlide 0.5s ease-out forwards;
+}
+
+@keyframes fadeSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.topic-img,
+.command-title,
+.btn-dark,
+.btn-light,
+.card-dark,
+.card-light {
+  transition: all 0.3s ease;
+}
+
+.topic-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(217, 83, 79, 0.6);
+}
+
+.command-title:hover {
+  transform: scale(1.05);
+  color: #D9534F;
+}
+
+.card-dark:hover,
+.card-light:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.fade-container {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.tab-active {
+  background-color: #D9534F;
+  color: #FFF;
+  border-radius: 8px;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.tab-active:hover {
+  background-color: #E06666;
+}
+
+.img-border {
+  border: 2px solid #D9534F;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.img-border:hover {
+  border-color: #E06666;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(217, 83, 79, 0.5);
+}
