@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desafio Devos</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { darkMode: 'class' }
+</script>
+</head>
+<body class="bg-dark text-dark-primary transition-colors duration-500">
+
+
+<header id="hero" class="p-12 text-center rounded-b-3xl shadow-2xl mb-12 card-dark" style="background: linear-gradient(135deg,#740000,#1d1b1b);">
+  <h1 class="text-5xl font-bold mb-4 drop-shadow-lg">Desafio Devos</h1>
+  <p id="hero-desc" class="text-secondary-dark italic text-lg">Explore comandos de Linux e GitHub de forma rápida, prática e interativa</p>
+  <button id="theme-toggle" class="mt-6 px-5 py-3 rounded-xl btn-dark shadow-lg hover:scale-105 transition-transform">light/dark</button>
+</header>
+
+<div class="container mx-auto px-6 max-w-6xl">
+  
+  <div id="topics-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 fade-container visible"></div>
+
+  
+  <div id="commands-list" class="fade-container hidden">
+    <button id="back-btn" class="px-4 py-2 rounded-xl mb-4 btn-dark hover:brightness-110 transition">← Voltar</button>
+    <input type="text" id="search-input" placeholder="Pesquisar comando..." class="w-full p-4 mb-6 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800000] transition"/>
+    <div id="commands-container" class="space-y-5"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
